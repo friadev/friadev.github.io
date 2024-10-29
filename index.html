@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Inane Ramblings</title>
+        <link rel="stylesheet" href="styles.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    </head>
+    <body>
+        <canvas></canvas>
+        <script src="script.js"></script>
+        <div class="moon"></div>
+        <div class="lights">
+            <div class="spotlight"></div>
+        </div>
+        <div class="building1"></div>
+        <div class="building2"></div>
+        <div class="building3"></div>
+        <div class="building4"></div>
+        <div class="building5"></div>
+        <div class="rain"></div>
+        <div class="underglow"></div>
+        <div class="plane">
+            <div class="light"></div>
+        </div>
+        <div class="plane2">
+            <div class="light2"></div>
+        </div>
+        <audio autoplay loop>
+            <source src="./Sounds/rain-inside-a-car1.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+        </audio>
+        <audio autoplay loop >
+            <source src="./Sounds/Nightcrawler.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+        </audio>
+        <h1>Inane Ramblings</h1>
+        <nav>
+            <a href="./index.html">Blog</a>
+            <a href="https://friasgames.itch.io/">Games</a>
+        </nav>
+        <section>
+            <article>
+                <h2>Random Tech Tips</h2>
+                    <p>Get a metal table for charging devices. It will passively cool them and you'll never have to worry about them heating up and damaging your battery. Store cables in a figure eight pattern instead of a roll. Use things that were designed to work together. For example, a lot of Android users like to buy cases with magnets to mimick MagSafe. Look for Qi2 certified cases instead to use with your Qi2 phone so you know that they meet some standard and have been tested to interoperate properly. Turn on autoupdates. I don't care how diligent you are about updating, just do it. Buying a bunch of software will not solve your security problems. Avoid AVs like the plague. Flash drives/SD cards are not good long-term storage devices. Get an SSD, HDD or Blueray or use a cloud backup service.
+                    </p>
+            </article>
+            <article>
+                <h2>Apple's Progress Toward USB C</h2>
+                <p>Apple at their recent event announced that they'd be switching the AirPods Max to USB C finally, bringing lightning one step closer to the grave. This October they switched their Mac accessories to USB C and stopped selling the old apple pencil, which means as far as I can tell their older iPhone offerings are the onle devices left with lightning.
+                </p>
+                <ul>
+                    <li>iPhone 14</li>
+                    <li>iPhone SE</li>
+                </ul>
+            </article>
+            <article>
+                <h2>Why Google Chrome <em>Actually</em> Sucks for Privacy</h2>
+                <p>I spend a lot of time in the privacy community and one thing it is absolutely allergic to is nuance. Case in point: Chrome is "spyware."
+                </p>
+                <p>This does nothing but cheapen the term spyware which should be reserved for heinous abuses of privacy like state actors exploiting the devices of journalists to gain info on them
+                    or an abusive partner installing stalkerware to track everything their victim is doing.
+                </p>
+                <p>The <em>real</em> problems with Chrome are more specific. Now, credit where it's due, the Chrome security team are some of the best in the industry and they've created the most secure
+                browser engine available; they should be recognized for their incredible work pushing browser security forward for everyone. If you want the most secure browser possible, you need
+                one based on Chromium.
+                </p>
+                <p>That said, its two main competitors, Safari and Firefox, while having significantly lower install bases, completely wipe the floor with Chrome in terms of their privacy features.
+                    Chrome has no option for E2EE sync for anything, so Google has full access to your browsing history, bookmarks, etc should you choose to enable syncing. Chrome doesn't have
+                    any anti-fingerprinting features at all. In fact, not only does it lack any kind of fingerprint randomization, it also actively makes fingerprinting worse by implementing <a href="https://webkit.org/standards-positions/">lots of APIs</a>
+                    that their competition doesn't for this exact reason. Why does a website need to know how much battery or RAM you have, or the orientation of your phone? It doesn't.
+                </p>
+                <p>WebKit has a page about the <a href="https://webkit.org/tracking-prevention/">anti-tracking technologies</a> they implement. Firefox forms the basis of the Tor browser and they've been upstreaming Tor browser features for a long time.
+                    These teams are the ones improving privacy on the web, not Chromium. Also worth noting the work Brave has done in implementing most of these same features in Chromium, proving it can be done
+                    and that Google simply doesn't want to.
+                </p>
+            </article>
+        </section>
+    </body>
+</html>

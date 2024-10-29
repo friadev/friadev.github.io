@@ -1,0 +1,432 @@
+:root {
+    overflow: hidden;
+}
+* {
+    box-sizing: border-box;
+}
+body {
+    background-color: rgb(7, 7, 7);
+    margin: 0;
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+}
+@keyframes driveby {
+    0% {left: 150vw;}
+    100% {left: -100vw;}
+}
+@keyframes blink {
+    0% {opacity: 1;}
+    50% {opacity: 0;}
+    100% {opacity: 1;}
+}
+@keyframes rain {
+    0% {bottom: 150vh; left: 50vw;}
+    100% {bottom: -50vh; left: 0vw;}
+}
+@keyframes spotlight {
+    0% {rotate: 45deg;}
+    50% {rotate: -45deg;}
+    100% {rotate: 45deg;}
+}
+@keyframes tilt {
+    0% {rotate: 15deg;}
+    50% {rotate: -15deg;}
+    100% {rotate: 15deg;}
+}
+@keyframes text {
+    0% {text-shadow:
+        -15px -15px 20px rgb(0, 255, 255),
+        -14px -14px rgb(10, 240, 255),
+        -13px -13px rgb(20, 230, 255),
+        -12px -12px rgb(30, 220, 255),
+        -11px -11px rgb(40, 210, 255),
+        -10px -10px rgb(50, 200, 255),
+        -9px -9px rgb(60, 190, 255),
+        -8px -8px rgb(70, 180, 255),
+        -7px -7px rgb(80, 170, 255),
+        -6px -6px rgb(90, 160, 255),
+        -5px -5px rgb(100, 150, 255),
+        -4px -4px rgb(110, 140, 255),
+        -3px -3px rgb(120, 130, 255),
+        -2px -2px rgb(130, 120, 255),
+        -1px -1px rgb(140, 110, 255),
+        0px 0px 20px rgb(150, 100, 255),
+        0px 0px rgb(150, 100, 255),
+        1px 1px rgb(160, 90, 255),
+        2px 2px rgb(170, 80, 255),
+        3px 3px rgb(180, 70, 255),
+        4px 4px rgb(190, 60, 255),
+        5px 5px rgb(200, 50, 255),
+        6px 6px rgb(210, 40, 255),
+        7px 7px rgb(220, 30, 255),
+        8px 8px rgb(230, 20, 255),
+        9px 9px rgb(240, 10, 255),
+        10px 10px rgb(245, 5, 255),
+        11px 11px rgb(250, 0, 255),
+        12px 12px rgb(255, 0, 255),
+        13px 13px rgb(255, 0, 255),
+        14px 14px rgb(255, 0, 255),
+        15px 15px 20px rgb(255, 0, 255);}
+    25% {text-shadow:
+        -15px 15px 20px rgb(0, 255, 255),
+        -14px 14px rgb(10, 240, 255),
+        -13px 13px rgb(20, 230, 255),
+        -12px 12px rgb(30, 220, 255),
+        -11px 11px rgb(40, 210, 255),
+        -10px 10px rgb(50, 200, 255),
+        -9px 9px rgb(60, 190, 255),
+        -8px 8px rgb(70, 180, 255),
+        -7px 7px rgb(80, 170, 255),
+        -6px 6px rgb(90, 160, 255),
+        -5px 5px rgb(100, 150, 255),
+        -4px 4px rgb(110, 140, 255),
+        -3px 3px rgb(120, 130, 255),
+        -2px 2px rgb(130, 120, 255),
+        -1px 1px rgb(140, 110, 255),
+        0px 0px 20px rgb(150, 100, 255),
+        0px 0px rgb(150, 100, 255),
+        1px -1px rgb(160, 90, 255),
+        2px -2px rgb(170, 80, 255),
+        3px -3px rgb(180, 70, 255),
+        4px -4px rgb(190, 60, 255),
+        5px -5px rgb(200, 50, 255),
+        6px -6px rgb(210, 40, 255),
+        7px -7px rgb(220, 30, 255),
+        8px -8px rgb(230, 20, 255),
+        9px -9px rgb(240, 10, 255),
+        10px -10px rgb(245, 5, 255),
+        11px -11px rgb(250, 0, 255),
+        12px -12px rgb(255, 0, 255),
+        13px -13px rgb(255, 0, 255),
+        14px -14px rgb(255, 0, 255),
+        15px -15px 20px rgb(255, 0, 255);}
+    50% {text-shadow:
+        15px 15px 20px rgb(0, 255, 255),
+        14px 14px rgb(10, 240, 255),
+        13px 13px rgb(20, 230, 255),
+        12px 12px rgb(30, 220, 255),
+        11px 11px rgb(40, 210, 255),
+        10px 10px rgb(50, 200, 255),
+        9px 9px rgb(60, 190, 255),
+        8px 8px rgb(70, 180, 255),
+        7px 7px rgb(80, 170, 255),
+        6px 6px rgb(90, 160, 255),
+        5px 5px rgb(100, 150, 255),
+        4px 4px rgb(110, 140, 255),
+        3px 3px rgb(120, 130, 255),
+        2px 2px rgb(130, 120, 255),
+        1px 1px rgb(140, 110, 255),
+        0px 0px 20px rgb(150, 100, 255),
+        0px 0px rgb(150, 100, 255),
+        -1px -1px rgb(160, 90, 255),
+        -2px -2px rgb(170, 80, 255),
+        -3px -3px rgb(180, 70, 255),
+        -4px -4px rgb(190, 60, 255),
+        -5px -5px rgb(200, 50, 255),
+        -6px -6px rgb(210, 40, 255),
+        -7px -7px rgb(220, 30, 255),
+        -8px -8px rgb(230, 20, 255),
+        -9px -9px rgb(240, 10, 255),
+        -10px -10px rgb(245, 5, 255),
+        -11px -11px rgb(250, 0, 255),
+        -12px -12px rgb(255, 0, 255),
+        -13px -13px rgb(255, 0, 255),
+        -14px -14px rgb(255, 0, 255),
+        -15px -15px 20px rgb(255, 0, 255);}
+    75% {text-shadow:
+        15px -15px 20px rgb(0, 255, 255),
+        14px -14px rgb(10, 240, 255),
+        13px -13px rgb(20, 230, 255),
+        12px -12px rgb(30, 220, 255),
+        11px -11px rgb(40, 210, 255),
+        10px -10px rgb(50, 200, 255),
+        9px -9px rgb(60, 190, 255),
+        8px -8px rgb(70, 180, 255),
+        7px -7px rgb(80, 170, 255),
+        6px -6px rgb(90, 160, 255),
+        5px -5px rgb(100, 150, 255),
+        4px -4px rgb(110, 140, 255),
+        3px -3px rgb(120, 130, 255),
+        2px -2px rgb(130, 120, 255),
+        1px -1px rgb(140, 110, 255),
+        0px 0px 20px rgb(150, 100, 255),
+        0px 0px rgb(150, 100, 255),
+        -1px 1px rgb(160, 90, 255),
+        -2px 2px rgb(170, 80, 255),
+        -3px 3px rgb(180, 70, 255),
+        -4px 4px rgb(190, 60, 255),
+        -5px 5px rgb(200, 50, 255),
+        -6px 6px rgb(210, 40, 255),
+        -7px 7px rgb(220, 30, 255),
+        -8px 8px rgb(230, 20, 255),
+        -9px 9px rgb(240, 10, 255),
+        -10px 10px rgb(245, 5, 255),
+        -11px 11px rgb(250, 0, 255),
+        -12px 12px rgb(255, 0, 255),
+        -13px 13px rgb(255, 0, 255),
+        -14px 14px rgb(255, 0, 255),
+        -15px 15px 20px rgb(255, 0, 255);}
+    100% {text-shadow:
+        -15px -15px 20px rgb(0, 255, 255),
+        -14px -14px rgb(10, 240, 255),
+        -13px -13px rgb(20, 230, 255),
+        -12px -12px rgb(30, 220, 255),
+        -11px -11px rgb(40, 210, 255),
+        -10px -10px rgb(50, 200, 255),
+        -9px -9px rgb(60, 190, 255),
+        -8px -8px rgb(70, 180, 255),
+        -7px -7px rgb(80, 170, 255),
+        -6px -6px rgb(90, 160, 255),
+        -5px -5px rgb(100, 150, 255),
+        -4px -4px rgb(110, 140, 255),
+        -3px -3px rgb(120, 130, 255),
+        -2px -2px rgb(130, 120, 255),
+        -1px -1px rgb(140, 110, 255),
+        0px 0px 20px rgb(150, 100, 255),
+        0px 0px rgb(150, 100, 255),
+        1px 1px rgb(160, 90, 255),
+        2px 2px rgb(170, 80, 255),
+        3px 3px rgb(180, 70, 255),
+        4px 4px rgb(190, 60, 255),
+        5px 5px rgb(200, 50, 255),
+        6px 6px rgb(210, 40, 255),
+        7px 7px rgb(220, 30, 255),
+        8px 8px rgb(230, 20, 255),
+        9px 9px rgb(240, 10, 255),
+        10px 10px rgb(245, 5, 255),
+        11px 11px rgb(250, 0, 255),
+        12px 12px rgb(255, 0, 255),
+        13px 13px rgb(255, 0, 255),
+        14px 14px rgb(255, 0, 255),
+        15px 15px 20px rgb(255, 0, 255);}
+}
+@keyframes articles {
+    0% {color: #0ff;
+        text-shadow: 
+            2px 2px 5px #fff,
+            2px 2px #fff,
+            0px 0px 5px #0ff;}
+    50% {color: #fff;
+         text-shadow: 
+            2px 2px 5px #0ff,
+            2px 2px #0ff,
+            0px 0px 5px #fff;}
+    100% {color: #0ff;
+         text-shadow: 
+            2px 2px 5px #fff,
+            2px 2px #fff,
+            0px 0px 5px #0ff;}
+}
+::selection {
+    background-color: rgb(117, 0, 168);
+}
+h1 {
+    text-align: center;
+    font-size: 4vmax;
+    color: transparent;
+    perspective: 200px;
+    animation: text 10s linear infinite, tilt 10s ease-in-out infinite;
+}
+h2 {
+    text-align: center;
+    color: #0ff;
+    animation: articles 5s ease-in-out infinite;
+}
+.moon {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: white;
+    box-shadow:
+        0 0 60px 30px #fff,
+        0 0 100px 60px #f0f,
+        0 0 140px 90px #0ff;
+    position: absolute;
+    top: 20%;
+    left: 80%;
+}
+.building1 {
+    height: 50vh;
+    width: 10vh;
+    position: absolute;
+    bottom: 0vh;
+    background-color: rgb(0, 180, 180);
+    animation: driveby 15s linear 0s infinite;
+}
+.building2 {
+    left: -50vw;
+    height: 50vh;
+    width: 10vh;
+    position: absolute;
+    bottom: 0vh;
+    background-color: rgb(0, 180, 180);
+    animation: driveby 15s linear 5s infinite;
+}
+.building3 {
+    left: -50vw;
+    height: 30vh;
+    width: 20vh;
+    position: absolute;
+    bottom: 0vh;
+    background-color: rgb(0, 180, 180);
+    animation: driveby 10s linear 10s infinite;
+}
+.building4 {
+    left: -50vw;
+    height: 55vh;
+    width: 20vh;
+    position: absolute;
+    bottom: 0vh;
+    background-color: rgb(0, 180, 180);
+    animation: driveby 9s linear 11s infinite;
+}
+.building5 {
+    height: 25vh;
+    width: 2vw;
+    position: absolute;
+    bottom: 5vh;
+    background-color: rgb(0, 180, 180);
+    filter: opacity(0.2);
+    animation: driveby 70s linear 0s infinite;
+}
+.underglow {
+    width: 100vw;
+    position: absolute;
+    top: 100vh;
+    box-shadow: 0 0 150px 100px magenta;
+}
+.plane {
+    position: absolute;
+    top: 40vh;
+    animation: driveby 40s linear 0s infinite reverse;
+}
+.light {
+    background-color: green;
+    box-shadow: green 0 0 5px;
+    position: absolute;
+    opacity: 0;
+    width: 1px;
+    height: 1px;
+    animation: blink 1s steps(1) 0s infinite;
+}
+.plane2 {
+    position: absolute;
+    top: 45vh;
+    animation: driveby 55s linear 5s infinite;
+}
+.light2 {
+    background-color: red;
+    box-shadow: red 0 0 5px;
+    position: inherit;
+    opacity: 0;
+    width: 1px;
+    height: 1px;
+    animation: blink 1s steps(1) 5s infinite;
+}
+.lights {
+    position: absolute;
+    filter: blur(5px);
+    bottom: 10vh;
+    left: 50vw;
+    animation: driveby 54s linear 0s infinite;
+}
+.spotlight {
+    background: linear-gradient(transparent, whitesmoke);
+    clip-path: polygon(0 0, 50% 100%, 100% 0);
+    width: 10vw;
+    height: 75vh;
+    transform-origin: 50% 100%;
+    animation: spotlight 15s ease 0s infinite;
+}
+.rain {
+    transform: rotate(30deg);
+    background-color: white;
+    position: absolute;
+    opacity: 0.25;
+    width: 1px;
+    height: 50px;
+    animation: rain 0.5s linear 0s infinite;
+    box-shadow: 
+        10vw 10vh white,
+        90vw 90vh white,
+        85vw 70vh white,
+        70vw 15vh white,
+        50vw 50vh white,
+        50vw 70vh white,
+        25vw 5vh white,
+        55vw -25vh white,
+        5vw -40vh white,
+        35vw -20vh white,
+        95vw -10vh white,
+        25vw -35vh white,
+        10vw -25vh white,
+        55vw 95vh white,
+        41vw 5vh white,
+        14vw 81vh white,
+        -34vw 23vh white,
+        -50vw 50vh white,
+        -30vw 11vh white,
+        -13vw 21vh white,
+        -5vw -23vh white,
+        32vw -70vh white,
+        4vw 36vh white;
+}
+a {
+    z-index: 2;
+}
+p {
+    color: #fff;
+    text-shadow: 0px 0px 2px #fff;
+}
+article {
+    background-color: rgba(13, 13, 13, 0.75);
+    backdrop-filter: blur(15px);
+    padding: 10px;
+    margin: 25px;
+    border-radius: 25px;
+    z-index: 2;
+}
+section {
+    overflow-y: auto;
+    max-height: 75vh;
+    scrollbar-color: #363636 transparent;
+}
+::-webkit-scrollbar {
+    border-radius: 25px;
+}
+@media screen and (min-width: 750px) {
+    article {
+        width: 750px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+a:link {
+    color: #0ff;
+    text-shadow: 0px 0px 2px #0ff;
+}
+a:visited {
+    color: #f0f;
+    text-shadow: 0px 0px 2px #f0f;
+}
+nav {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 2;
+}
+ul {
+    color: #0ff;
+    text-shadow: 0px 0px 15px #0ff,
+                0px 0px 10px #0ff,
+                0px 0px 5px #0ff;
+}
+canvas {
+    width: 100vw;
+    height: 100vh;
+    background-color: transparent;
+    position: absolute;
+    opacity: 100%;
+    z-index: -1;
+}
