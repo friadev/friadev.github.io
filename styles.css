@@ -228,7 +228,7 @@ h1 {
     perspective: 200px;
     animation: text 10s linear infinite, tilt 10s ease-in-out infinite;
 }
-h2 {
+h2, h3, h4, h5, h6 {
     text-align: center;
     color: #0ff;
     animation: articles 5s ease-in-out infinite;
