@@ -10,6 +10,168 @@ body {
     position: fixed;
     height: 100vh;
     width: 100vw;
+    perspective: 5000px;
+    perspective-origin: bottom;
+}
+@keyframes flicker {
+  0% {
+    opacity: 0.27861;
+  }
+  5% {
+    opacity: 0.34769;
+  }
+  10% {
+    opacity: 0.23604;
+  }
+  15% {
+    opacity: 0.90626;
+  }
+  20% {
+    opacity: 0.18128;
+  }
+  25% {
+    opacity: 0.83891;
+  }
+  30% {
+    opacity: 0.65583;
+  }
+  35% {
+    opacity: 0.67807;
+  }
+  40% {
+    opacity: 0.26559;
+  }
+  45% {
+    opacity: 0.84693;
+  }
+  50% {
+    opacity: 0.96019;
+  }
+  55% {
+    opacity: 0.08594;
+  }
+  60% {
+    opacity: 0.20313;
+  }
+  65% {
+    opacity: 0.71988;
+  }
+  70% {
+    opacity: 0.53455;
+  }
+  75% {
+    opacity: 0.37288;
+  }
+  80% {
+    opacity: 0.71428;
+  }
+  85% {
+    opacity: 0.70419;
+  }
+  90% {
+    opacity: 0.7003;
+  }
+  95% {
+    opacity: 0.36108;
+  }
+  100% {
+    opacity: 0.24387;
+  }
+}
+@keyframes textShadow {
+  0% {
+    text-shadow: 0.4389924193300864px 0 1px rgba(0,30,255,0.5), -0.4389924193300864px 0 1px rgba(255,0,80,0.3), 0 0 3px;
+  }
+  5% {
+    text-shadow: 2.7928974010788217px 0 1px rgba(0,30,255,0.5), -2.7928974010788217px 0 1px rgba(255,0,80,0.3), 0 0 3px;
+  }
+  10% {
+    text-shadow: 0.02956275843481219px 0 1px rgba(0,30,255,0.5), -0.02956275843481219px 0 1px rgba(255,0,80,0.3), 0 0 3px;
+  }
+  15% {
+    text-shadow: 0.40218538552878136px 0 1px rgba(0,30,255,0.5), -0.40218538552878136px 0 1px rgba(255,0,80,0.3), 0 0 3px;
+  }
+  20% {
+    text-shadow: 3.4794037899852017px 0 1px rgba(0,30,255,0.5), -3.4794037899852017px 0 1px rgba(255,0,80,0.3), 0 0 3px;
+  }
+  25% {
+    text-shadow: 1.6125630401149584px 0 1px rgba(0,30,255,0.5), -1.6125630401149584px 0 1px rgba(255,0,80,0.3), 0 0 3px;
+  }
+  30% {
+    text-shadow: 0.7015590085143956px 0 1px rgba(0,30,255,0.5), -0.7015590085143956px 0 1px rgba(255,0,80,0.3), 0 0 3px;
+  }
+  35% {
+    text-shadow: 3.896914047650351px 0 1px rgba(0,30,255,0.5), -3.896914047650351px 0 1px rgba(255,0,80,0.3), 0 0 3px;
+  }
+  40% {
+    text-shadow: 3.870905614848819px 0 1px rgba(0,30,255,0.5), -3.870905614848819px 0 1px rgba(255,0,80,0.3), 0 0 3px;
+  }
+  45% {
+    text-shadow: 2.231056963361899px 0 1px rgba(0,30,255,0.5), -2.231056963361899px 0 1px rgba(255,0,80,0.3), 0 0 3px;
+  }
+  50% {
+    text-shadow: 0.08084290417898504px 0 1px rgba(0,30,255,0.5), -0.08084290417898504px 0 1px rgba(255,0,80,0.3), 0 0 3px;
+  }
+  55% {
+    text-shadow: 2.3758461067427543px 0 1px rgba(0,30,255,0.5), -2.3758461067427543px 0 1px rgba(255,0,80,0.3), 0 0 3px;
+  }
+  60% {
+    text-shadow: 2.202193051050636px 0 1px rgba(0,30,255,0.5), -2.202193051050636px 0 1px rgba(255,0,80,0.3), 0 0 3px;
+  }
+  65% {
+    text-shadow: 2.8638780614874975px 0 1px rgba(0,30,255,0.5), -2.8638780614874975px 0 1px rgba(255,0,80,0.3), 0 0 3px;
+  }
+  70% {
+    text-shadow: 0.48874025155497314px 0 1px rgba(0,30,255,0.5), -0.48874025155497314px 0 1px rgba(255,0,80,0.3), 0 0 3px;
+  }
+  75% {
+    text-shadow: 1.8948491305757957px 0 1px rgba(0,30,255,0.5), -1.8948491305757957px 0 1px rgba(255,0,80,0.3), 0 0 3px;
+  }
+  80% {
+    text-shadow: 0.0833037308038857px 0 1px rgba(0,30,255,0.5), -0.0833037308038857px 0 1px rgba(255,0,80,0.3), 0 0 3px;
+  }
+  85% {
+    text-shadow: 0.09769827255241735px 0 1px rgba(0,30,255,0.5), -0.09769827255241735px 0 1px rgba(255,0,80,0.3), 0 0 3px;
+  }
+  90% {
+    text-shadow: 3.443339761481782px 0 1px rgba(0,30,255,0.5), -3.443339761481782px 0 1px rgba(255,0,80,0.3), 0 0 3px;
+  }
+  95% {
+    text-shadow: 2.1841838852799786px 0 1px rgba(0,30,255,0.5), -2.1841838852799786px 0 1px rgba(255,0,80,0.3), 0 0 3px;
+  }
+  100% {
+    text-shadow: 2.6208764473832513px 0 1px rgba(0,30,255,0.5), -2.6208764473832513px 0 1px rgba(255,0,80,0.3), 0 0 3px;
+  }
+}
+.crt::after {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(18, 16, 16, 0.1);
+  opacity: 0;
+  z-index: 2;
+  pointer-events: none;
+  animation: flicker 0.15s infinite;
+}
+.crt::before {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
+  z-index: 2;
+  background-size: 100% 2px, 3px 100%;
+  pointer-events: none;
+}
+.crt {
+  animation: textShadow 1.6s infinite;
 }
 @keyframes driveby {
     0% {left: 150vw;}
@@ -25,9 +187,9 @@ body {
     100% {bottom: -50vh; left: 0vw;}
 }
 @keyframes spotlight {
-    0% {rotate: 45deg;}
-    50% {rotate: -45deg;}
-    100% {rotate: 45deg;}
+    0% {rotate: 45deg; transform: translateZ(-10vw);}
+    50% {rotate: -45deg; transform: translateZ(-10vw)}
+    100% {rotate: 45deg; transform: translateZ(-10vw);}
 }
 @keyframes tilt {
     0% {rotate: 15deg;}
@@ -218,6 +380,240 @@ body {
             2px 2px #fff,
             0px 0px 5px #0ff;}
 }
+
+.building1 {
+    position: absolute;
+    transform-style: preserve-3d;
+    animation: driveby 15s linear 0s infinite;
+    top: 45%;
+    left: -40%;
+    transform: translateZ(-1000px);
+}
+.building1__face {
+    position: absolute;
+    line-height: 200px;
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+}
+.building1__face--front  { 
+    background: rgb(0, 180, 180); 
+    width: 10vw;
+    height: 75vh;
+    transform: rotateY(  0deg) translateZ(5vw);
+}
+.building1__face--right  { 
+    background: rgb(0, 115, 115); 
+    width: 10vw;
+    height: 75vh;
+    transform: rotateY( 90deg) translateZ(5vw);
+}
+.building1__face--back   { 
+    background: rgb(0, 100, 100);
+    width: 10vw;
+    height: 75vh;
+    transform: rotateY(180deg) translateZ(5vw);
+}
+.building1__face--left   { 
+    background: rgb(0, 115, 115); 
+    width: 10vw;
+    height: 75vh;
+    transform: rotateY(-90deg) translateZ(5vw);
+}
+.building1__face--top    { 
+    background: rgb(0, 138, 138);
+    width: 10vw;
+    height: 10vw;
+    transform: rotateX( 90deg) translateZ(5vw);
+}
+
+.building2 {
+    position: absolute;
+    transform-style: preserve-3d;
+    top: 40%;
+    animation: driveby 15s linear 5s infinite;
+    left: -50vw;
+}
+.building2__face {
+    position: absolute;
+    line-height: 200px;
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+}
+.building2__face--front  { 
+    background: rgb(0, 180, 180); 
+    width: 10vw;
+    height: 75vh;
+    transform: translateZ(5vw);
+}
+.building2__face--right  { 
+    background: rgb(0, 115, 115); 
+    width: 10vw;
+    height: 75vh;
+    transform: rotateY(90deg) translateZ(5vw);
+}
+.building2__face--back   { 
+    background: rgb(0, 100, 100);
+    width: 10vw;
+    height: 75vh;
+    transform: rotateY(180deg) translateZ(5vw);
+}
+.building2__face--left   { 
+    background: rgb(0, 115, 115); 
+    width: 10vw;
+    height: 75vh;
+    transform: rotateY(-90deg) translateZ(5vw);
+}
+.building2__face--top    { 
+    background: rgb(0, 138, 138);
+    width: 10vw;
+    height: 10vw;
+    transform: rotateX(90deg) translateZ(5vw);
+}
+
+.building3 {
+    position: absolute;
+    transform-style: preserve-3d;
+    animation: driveby 10s linear 10s infinite;
+    top: 40%;
+    left: -50%;
+    transform: translateZ(-500px);
+}
+.building3__face {
+    position: absolute;
+    line-height: 200px;
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+}
+.building3__face--front  { 
+    background: rgb(0, 180, 180); 
+    width: 10vw;
+    height: 75vh;
+    transform: rotateY(  0deg) translateZ(5vw);
+}
+.building3__face--right  { 
+    background: rgb(0, 115, 115); 
+    width: 10vw;
+    height: 75vh;
+    transform: rotateY( 90deg) translateZ(5vw);
+}
+.building3__face--back   { 
+    background: rgb(0, 131, 131);
+    width: 10vw;
+    height: 75vh;
+    transform: rotateY(180deg) translateZ(5vw);
+}
+.building3__face--left   { 
+    background: rgb(0, 115, 115); 
+    width: 10vw;
+    height: 75vh;
+    transform: rotateY(-90deg) translateZ(5vw);
+}
+.building3__face--top    { 
+    background: rgb(0, 138, 138);
+    width: 10vw;
+    height: 10vw;
+    transform: rotateX( 90deg) translateZ(5vw);
+}
+
+.building4 {
+    left: -50vw;
+    position: absolute;
+    transform-style: preserve-3d;
+    top: 40%;
+    animation: driveby 9s linear 11s infinite;
+}
+.building4__face {
+    position: absolute;
+    line-height: 200px;
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+}
+.building4__face--front  { 
+    background: rgb(0, 180, 180); 
+    width: 10vw;
+    height: 75vh;
+    transform: rotateY(  0deg) translateZ(5vw);
+}
+.building4__face--right  { 
+    background: rgb(0, 115, 115); 
+    width: 10vw;
+    height: 75vh;
+    transform: rotateY( 90deg) translateZ(5vw);
+}
+.building4__face--back   { 
+    background: rgb(0, 131, 131);
+    width: 10vw;
+    height: 75vh;
+    transform: rotateY(180deg) translateZ(5vw);
+}
+.building4__face--left   { 
+    background: rgb(0, 115, 115);
+    width: 10vw;
+    height: 75vh;
+    transform: rotateY(-90deg) translateZ(5vw);
+}
+.building4__face--top    { 
+    background: rgb(0, 138, 138);
+    width: 10vw;
+    height: 10vw;
+    transform: rotateX( 90deg) translateZ(5vw);
+}
+
+.building5 {
+    position: absolute;
+    transform-style: preserve-3d;
+    top: 30%;
+    animation: driveby 30s linear 0s infinite;
+    transform: translateZ(-5000px);
+    z-index: -1;
+}
+.building5__face {
+    position: absolute;
+    line-height: 200px;
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+}
+.building5__face--front  { 
+    background: rgb(0, 180, 180); 
+    width: 10vw;
+    height: 75vh;
+    transform: rotateY(0deg) translateZ(5vw);
+}
+.building5__face--right  { 
+    background: rgb(0, 115, 115); 
+    width: 10vw;
+    height: 75vh;
+    transform: rotateY( 90deg) translateZ(5vw);
+}
+.building5__face--back   { 
+    background: rgb(0, 131, 131);
+    width: 10vw;
+    height: 75vh;
+    transform: rotateY(180deg) translateZ(5vw);
+}
+.building5__face--left   { 
+    background: rgb(0, 115, 115); 
+    width: 10vw;
+    height: 75vh;
+    transform: rotateY(-90deg) translateZ(5vw);
+}
+.building5__face--top    { 
+    background: rgb(0, 138, 138);
+    width: 10vw;
+    height: 10vw;
+    transform: rotateX( 90deg) translateZ(5vw);
+}
+
 ::selection {
     background-color: rgb(117, 0, 168);
 }
@@ -228,7 +624,7 @@ h1 {
     perspective: 200px;
     animation: text 10s linear infinite, tilt 10s ease-in-out infinite;
 }
-h2, h3, h4, h5, h6 {
+h2, h3, h4 {
     text-align: center;
     color: #0ff;
     animation: articles 5s ease-in-out infinite;
@@ -246,50 +642,8 @@ h2, h3, h4, h5, h6 {
     top: 20%;
     left: 80%;
 }
-.building1 {
-    height: 50vh;
-    width: 10vh;
-    position: absolute;
-    bottom: 0vh;
-    background-color: rgb(0, 180, 180);
-    animation: driveby 15s linear 0s infinite;
-}
-.building2 {
-    left: -50vw;
-    height: 50vh;
-    width: 10vh;
-    position: absolute;
-    bottom: 0vh;
-    background-color: rgb(0, 180, 180);
-    animation: driveby 15s linear 5s infinite;
-}
-.building3 {
-    left: -50vw;
-    height: 30vh;
-    width: 20vh;
-    position: absolute;
-    bottom: 0vh;
-    background-color: rgb(0, 180, 180);
-    animation: driveby 10s linear 10s infinite;
-}
-.building4 {
-    left: -50vw;
-    height: 55vh;
-    width: 20vh;
-    position: absolute;
-    bottom: 0vh;
-    background-color: rgb(0, 180, 180);
-    animation: driveby 9s linear 11s infinite;
-}
-.building5 {
-    height: 25vh;
-    width: 2vw;
-    position: absolute;
-    bottom: 5vh;
-    background-color: rgb(0, 180, 180);
-    filter: opacity(0.2);
-    animation: driveby 70s linear 0s infinite;
-}
+
+
 .underglow {
     width: 100vw;
     position: absolute;
@@ -309,6 +663,7 @@ h2, h3, h4, h5, h6 {
     width: 1px;
     height: 1px;
     animation: blink 1s steps(1) 0s infinite;
+
 }
 .plane2 {
     position: absolute;
@@ -338,6 +693,8 @@ h2, h3, h4, h5, h6 {
     height: 75vh;
     transform-origin: 50% 100%;
     animation: spotlight 15s ease 0s infinite;
+    transform-style: preserve-3d;
+    transform: translateZ(-10vw);
 }
 .rain {
     transform: rotate(30deg);
