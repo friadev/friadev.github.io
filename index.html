@@ -1,18 +1,25 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Inane Ramblings</title>
+        <title>fria's place</title>
         <link rel="stylesheet" href="styles.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     </head>
     <body>
+        <div class="background"></div>
         <div class="crt"></div>
-        <canvas></canvas>
-        <script src="script.js"></script>
-        <div class="moon"></div>
+        
         <div class="lights">
             <div class="spotlight"></div>
         </div>
+    <div class="pyramid">
+        <div class="base"></div>
+        <div class="side one"></div>
+        <div class="side two"></div>
+        <div class="side three"></div>
+        <div class="side four"></div>
+    </div>
+    </body>
         <div class="building1">
             <div class="building1__face building1__face--front"></div>
             <div class="building1__face building1__face--back"></div>
@@ -48,14 +55,8 @@
             <div class="building5__face building5__face--left"></div>
             <div class="building5__face building5__face--top"></div>
         </div>
-        <div class="rain"></div>
+        <div id="sun"></div>
         <div class="underglow"></div>
-        <div class="plane">
-            <div class="light"></div>
-        </div>
-        <div class="plane2">
-            <div class="light2"></div>
-        </div>
         <audio autoplay loop>
             <source src="./Sounds/rain-inside-a-car1.mp3" type="audio/mp3">
         Your browser does not support the audio element.
@@ -64,11 +65,16 @@
             <source src="./Sounds/Nightcrawler.mp3" type="audio/mp3">
         Your browser does not support the audio element.
         </audio>
-        <h1>Inane Ramblings</h1>
-        <nav>
-            <a href="./index.html">Blog</a>
-            <a href="https://friasgames.itch.io/">Games</a>
+        <header>
+            <h1>fria's place</h1>
+            <nav>
+                <ul>
+                    <li><a href="./index.html">Blog</a></li>
+                    <li><a href="https://friasgames.itch.io/">Games</a></li>
+                </ul>
         </nav>
+        </header>
+       
         <section>
             <article>
                 <h2>What Your Phone Has Replaced</h2>
@@ -120,5 +126,5 @@
                 </p>
             </article>
         </section>
-    </body>
+    </div>
 </html>
