@@ -648,7 +648,7 @@ header li a {
     padding: 10px;
     border-radius: 10px;
     display: inline-block;
-    font-size: 50pt;
+    font-size: 3vmax;
     font-weight: bold;
     color: transparent;
     animation: text 16s linear infinite;
