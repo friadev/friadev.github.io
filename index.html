@@ -54,8 +54,32 @@
             <div class="building5__face building5__face--left"></div>
             <div class="building5__face building5__face--top"></div>
         </div>
+        
         <img class="tree" src="./tree.svg"></img>
-        <div id="sun"></div>
+        <div class="sun-wrapper">
+          <svg viewBox="0 0 200 200" xmlns="www.w3.org">
+            <defs>
+              <linearGradient id="sunGradient" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0%" stop-color="#ffdd00" />
+                <stop offset="100%" stop-color="#ff00ff" />
+              </linearGradient>
+
+              <mask id="sunMask">
+                <circle cx="100" cy="100" r="80" fill="white" />
+    
+                <rect class="line" x="0" y="40"  width="200" fill="black" style="--h1: 0px;  --h2: 3px;" />
+                <rect class="line" x="0" y="65"  width="200" fill="black" style="--h1: 3px;  --h2: 6px;" />
+                <rect class="line" x="0" y="90"  width="200" fill="black" style="--h1: 6px;  --h2: 10px;" />
+                <rect class="line" x="0" y="115"  width="200" fill="black" style="--h1: 10px; --h2: 15px;" />
+                <rect class="line" x="0" y="140" width="200" fill="black" style="--h1: 15px; --h2: 21px;" />
+                <rect class="line" x="0" y="165" width="200" fill="black" style="--h1: 21px; --h2: 28px;" />
+                <rect class="line" x="0" y="190" width="200" fill="black" style="--h1: 28px; --h2: 36px;" />
+              </mask>
+            </defs>
+
+            <circle cx="100" cy="100" r="80" fill="url(#sunGradient)" mask="url(#sunMask)" />
+          </svg>
+        </div>
         <div class="underglow"></div>
         <header>
             <h1>fria's place</h1>
