@@ -127,17 +127,9 @@ body {
   background-size: 100% 2px, 3px 100%;
   pointer-events: none;
 }
-.crt {
-  animation: textShadow 1.6s infinite;
-}
 @keyframes driveby {
     0% {left: 150vw;}
     100% {left: -100vw;}
-}
-@keyframes blink {
-    0% {opacity: 1;}
-    50% {opacity: 0;}
-    100% {opacity: 1;}
 }
 @keyframes spotlight {
     0% {rotate: 45deg; transform: translateZ(-10vw);}
@@ -332,6 +324,12 @@ body {
             2px 2px 5px #fff,
             2px 2px #fff,
             0px 0px 5px #0ff;}
+}
+
+.wolf {
+    position: absolute;
+    transform-style: preserve-3d;
+    
 }
 
 .building1 {
@@ -637,9 +635,6 @@ section {
     max-height: 75vh;
     scrollbar-color: #363636 transparent;
 }
-::-webkit-scrollbar {
-    border-radius: 25px;
-}
 @media screen and (min-width: 750px) {
     article {
         width: 750px;
@@ -678,18 +673,14 @@ li {
     align-items: center;
     display: inline;
 }
-iframe {
-    background-color: transparent;
-}
-
 .sun-wrapper {
     z-index: -1;
-  position: absolute;
-  right: 10vh;
-  top: 10vh;
-  width: 500px;
-  height: 500px;
-  filter: drop-shadow(0 0 40px #ff00ff88);
+    position: absolute;
+    right: 10vh;
+    top: 10vh;
+    width: 500px;
+    height: 500px;
+    filter: drop-shadow(0 0 40px #ff00ff88);
 }
 @keyframes moveAndGrow {
   from {
@@ -742,4 +733,34 @@ iframe {
   transform-origin: 10vh 0;
   transform: rotateY(0) rotateX(-30deg);
   border-bottom-color: rgb(0, 115, 115);
+}
+a {
+    text-decoration: none;
+}
+article a:link {
+    color: cyan;
+}
+article a:hover {
+    color: lightcyan;
+    text-shadow: 0px 0px 5px cyan;
+}
+article a:visited {
+    color: #8594e4;
+}
+code {
+    background-color: rgb(128, 128, 128 / 0.5);
+}
+blockquote {
+    color: white;
+    text-shadow: 0px 0px 2px white;
+    border-left: 2px ridge rgb(0 255 255);
+    padding-left: 24px;
+    line-height: 1.6;
+    margin:24px 0
+    box-shadow: 0px 0px 5px cyan;
+}
+pre {
+    color: white;
+    text-shadow: 0px 0px 2px white;
+    background-color: black;
 }
